@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-family: Arial;
+  margin: 0;
+  background-color: rgba(218, 233, 247, 0.959);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50%; */
+  background-color: #13293d;
+  color: #fff;
+}
+
+h1 {
+  font-size: 200%;
+  padding-right: 50px;
+  padding-left: 25px;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 90%;
+  padding-right: 50px;
+  padding-left: 25px;
+  color: rgba(241, 243, 243, 0.534);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 400px;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+article ul {
+  margin-left: 5%;
+  font-size: 110%;
+  list-style: circle;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1 1 300px;
+  margin: 2% auto;
+  flex-shrink: 2;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.products {
+  flex: 4;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.item {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 0 1 75%;
+  flex-basis: 400px;
+  width: 300px;
+  transform: rotate(2deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+  background-color: teal;
+}
+
+.itemSpecial {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 0 0 50%;
+  flex-basis: 600px;
+  width: 75%;
+  transform: rotate(2deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+  background-color: yellow;
+}
+
+.item header {
+  border-radius: 25px 20px 0px 0px;
+  padding: 10px;
+}
+
+.itemSpecial header {
+  border-radius: 25px 20px 0px 0px;
+  padding: 10px;
+}
+
+.item p {
+  text-align: center;
+}
+
+.itemSpecial p {
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  min-width: 365px;
+  min-height: 365px;
+}
+
+.itemSpecial img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
